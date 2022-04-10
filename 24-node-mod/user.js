@@ -1,5 +1,5 @@
-//ex6
-const john = {
+//ex1
+ const john = {
   name: "John",
   age: 20
 };
@@ -9,7 +9,7 @@ const john = {
   age: 20
 };
 
-const bob = {
+ const bob = {
   name: "Bob",
   age: 20
 };
@@ -18,6 +18,9 @@ function logUser (user) {
   console.log(`My name is ${user.name}. I am ${user.age}`)
 }
 
-logUser(john);
-logUser(pete);
-logUser(bob);
+module.exports = {
+  john: john,
+  pete: pete,
+  bob: bob,
+  logUser: logUser,
+}
